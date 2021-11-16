@@ -1,14 +1,16 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: Oxygen;
 }
 
-/* HEADINGS */
+/* TYPOGRAPHY */
+body {
+  font-family: "Mulish", sans-serif;
+}
 h1,
 h2,
 h3 {
-  font-family: mulish;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
@@ -94,8 +96,14 @@ section h3 {
 .profile-img {
   width: 70%;
 }
+.intro {
+  display: flex;
+  flex-direction: column;
+}
 .intro p {
-  margin: 2rem 0;
+  margin: 2rem 1rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 .portfolio-header {
   text-align: center;
@@ -104,6 +112,19 @@ section h3 {
 .intro p,
 .contact p {
   text-align: center;
+}
+
+.skills p {
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.skills p:nth-of-type(odd) {
+  background-color: pink;
+}
+.skills p:nth-of-type(even) {
+  background-color: #52bab4;
 }
 
 .contact {
@@ -123,9 +144,11 @@ section h3 {
 
 header,
 .contact,
-.intro,
-footer {
+.intro {
   background-color: #fafafa;
+}
+footer {
+  background-color: rgb(245, 219, 223);
 }
 
 .footerwrapper {
@@ -148,29 +171,39 @@ footer {
   .hide-small-screen {
     display: block;
   }
+  header {
+    background-color: rgb(245, 219, 223);
+  }
   nav ul {
     display: flex;
     justify-content: center;
   }
   nav ul li,
   nav ul li a {
-    background-color: #fafafa;
+    background-color: rgb(245, 219, 223);
     margin-bottom: 2rem;
   }
+  nav ul li a {
+  }
   nav ul li a:hover {
-    color: #f78460;
+    color: #52bab4;
+    box-shadow: 0px 12px 3px -9px rgba(0, 0, 0, 0.5);
   }
   .intro {
     flex-direction: row-reverse;
-    max-width: 95%;
     font-size: 1.25rem;
     padding-bottom: 3rem;
+    align-content: flex-start;
+    background-color: rgb(245, 219, 223);
   }
   .intro img {
     margin: 0.5rem;
+    width: 40%;
   }
   .intro p {
     text-align: left;
+    margin: 1rem 0 0 1rem;
+    align-self: flex-start;
   }
   .portfolio-header {
     font-size: 1.25rem;
@@ -204,6 +237,7 @@ footer {
   .footer-nav ul li a {
     margin: 0;
     padding: 0;
+    background-color: rgb(245, 219, 223);
   }
   .footer-nav ul li a {
     margin-left: 1rem;
@@ -217,10 +251,23 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+  h1 {
+    margin-left: 2rem;
+  }
+  #nav {
+    margin-right: 2rem;
+  }
+  .intro img {
+    margin-right: 3rem;
+  }
+  .intro p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    max-width: 1000px;
+  }
 
   #nav ul li,
   #nav ul li a {
-    background-color: #fafafa;
     margin-bottom: 0;
   }
   #nav {
