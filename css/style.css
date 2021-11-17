@@ -164,7 +164,7 @@ footer {
 }
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .hide-large-screen {
     display: none;
   }
@@ -183,8 +183,7 @@ footer {
     background-color: rgb(245, 219, 223);
     margin-bottom: 2rem;
   }
-  nav ul li a {
-  }
+
   nav ul li a:hover {
     color: #52bab4;
     box-shadow: 0px 12px 3px -9px rgba(0, 0, 0, 0.5);
@@ -246,7 +245,7 @@ footer {
     font-size: 0.9rem;
   }
 }
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   header {
     display: flex;
     justify-content: space-between;
